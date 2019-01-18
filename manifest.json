@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bug Report Booster",
+  "description": "This extension collects environment data and opens the bug tracking tool",
+  "version": "0.5",
+    
+  "background": {
+    "scripts": ["/assets/js/background.js"]
+  },
+    
+  "content_scripts": [
+    {
+      "matches": ["*://arrowecommerce.atlassian.net/secure/*"],
+      "js": ["/assets/js/vendors/jquery.js", "/assets/js/update.js"],
+      "allFrames" : true
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "/assets/images/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Bug Report Booster"
+  },
+  "permissions": [
+    "activeTab",
+    "background",
+    "https://*/*",
+    "downloads",
+    "tabs", 
+    "history"
+  ]
+}

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bug Report Booster</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    </head>
+    <body>
+        <header>
+            <img id="header-image" src="">
+            <h1>Bug Report Booster</h1>
+        </header>
+        <section>
+            <div id= "verifying">
+                <p></p>
+                <div id ="failed">
+                    <img id="alert-icon" src="../assets/images/alert.png">
+                    <p>This URL is not supported please verify the configuration file...</p>
+                </div>
+            </div>
+            <div id="loading">
+                <p>Collecting environment data and a screenshot...</p>
+                <div class="spinner">
+                  <div class="rect5"></div>
+                  <div class="rect4"></div>
+                  <div class="rect3"></div>
+                  <div class="rect2"></div>
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+                  <div class="rect4"></div>
+                  <div class="rect3"></div>
+                  <div class="rect2"></div>
+                  <div class="rect1"></div>
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+                  <div class="rect4"></div>
+                  <div class="rect3"></div>
+                  <div class="rect2"></div>
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+                </div>
+            </div>
+            <div id="loaded">        
+                <div class="detail">
+                    <p class="details">Current Url: </p>
+                    <input class="site-info" id="url" value="asds" readonly>
+                </div>
+                <div class="detail">
+                    <p class="details">Current Browser: </p>
+                    <input class="site-info" id="browser" value="">
+                </div>
+                <div class="detail">
+                    <p class="details">Current OS: </p>
+                    <input class="site-info" id="os"  value="">
+                </div>
+                <div class="detail" style="height:69px">
+                    <p class="details">Visited Urls: </p>
+                    <textarea class="site-info urls-info" id="urls"  value=""></textarea>
+                </div>
+                <div class="img-container detail">
+                    <p class="details">Screenshot: </p>
+                    <a id="link-popup" class="test-popup-link" href="">
+                        <img id="screen-capture" src=""></img>
+                    </a>
+                </div>
+
+                <div class="submit-container">
+                    <input id="submit" type="button" value="Create Bug">
+                </div>
+            </div>
+        </section>
+    
+        <script id= "configFile" src="configuration.js"></script>
+    
+        <script src="assets/js/vendors/jquery.js"></script>
+        <script src="assets/js/vendors/magnific-popup.js"></script>    
+        <script src="assets/js/app.js"></script>
+                
+        <script src="assets/js/vendors/detect.js"></script>
+    
+    </body>
+</html>
+
